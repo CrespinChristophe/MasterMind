@@ -1,0 +1,72 @@
+
+
+.container {
+    width: 380px;
+    border: 2px solid black;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+  }
+
+.bleu { 
+    height: 50px; 
+    width: 50px; 
+    background-color: blue;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
+
+.rouge { 
+    height: 50px; 
+    width: 50px; 
+    background-color: red;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
+
+.vert { 
+    height: 50px; 
+    width: 50px; 
+    background-color: green;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
+
+.jaune { 
+    height: 50px; 
+    width: 50px; 
+    background-color: yellow;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
+
+.rose { 
+    height: 50px; 
+    width: 50px; 
+    background-color: rgb(218, 190, 190);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
+
+.noir { 
+    height: 50px; 
+    width: 50px; 
+    background-color: black;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
+
+.vertclair { 
+    height: 50px; 
+    width: 50px; 
+    background-color: rgb(128, 204, 128);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 50%; 
+    display: inline-block;
+} 
