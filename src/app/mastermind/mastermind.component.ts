@@ -16,7 +16,9 @@ export class MastermindComponent implements OnInit {
   varNoir: string = "noir";
   varVertClair: string = "vert clair";
   couleurChoisie: string ="";
-  //warning: string ="";
+
+  //Tous les booleans
+
   isAvailable: boolean = false;
   boolBleu: boolean = false;
   boolRouge: boolean = false;
@@ -25,6 +27,7 @@ export class MastermindComponent implements OnInit {
   boolRose: boolean = false;
   boolNoir: boolean = false;
   boolVertClair: boolean = false;
+  boolContainer2: boolean = false;
 
 
 
@@ -34,13 +37,6 @@ export class MastermindComponent implements OnInit {
   
 
   ngOnInit(): void {
-
-    /*if ( this.compteurCouleurs == 4) {
-
-      console.log("le nombre de couleurs est égal à 4");
-      
-    } */
-
   }
 
   essais(): void {
@@ -56,6 +52,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "bleu";
     this.boolBleu = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -63,6 +60,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "rouge";
     this.boolRouge = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -70,6 +68,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "vert";
     this.boolVert = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -77,6 +76,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "jaune";
     this.boolJaune = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -84,6 +84,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "rose";
     this.boolRose = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -91,6 +92,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "noir";
     this.boolNoir = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -98,6 +100,7 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "vert clair";
     this.boolVertClair = true;
+    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -106,7 +109,17 @@ export class MastermindComponent implements OnInit {
   }
 
   reset() : void {
-    console.log("vous avez cliqué sur reset");
+
+  this.isAvailable = false;
+  this.boolBleu = false;
+  this.boolRouge = false;
+  this.boolVert = false;
+  this.boolJaune = false;
+  this.boolRose = false;
+  this.boolNoir = false;
+  this.boolVertClair = false;
+  this.boolContainer2 = false;
+  this.compteurCouleurs = 0;
 
   }
 
