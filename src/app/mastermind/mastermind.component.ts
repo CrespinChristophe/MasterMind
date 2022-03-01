@@ -18,6 +18,13 @@ export class MastermindComponent implements OnInit {
   couleurChoisie: string ="";
   //warning: string ="";
   isAvailable: boolean = false;
+  boolBleu: boolean = false;
+  boolRouge: boolean = false;
+  boolVert: boolean = false;
+  boolJaune: boolean = false;
+  boolRose: boolean = false;
+  boolNoir: boolean = false;
+  boolVertClair: boolean = false;
 
 
 
@@ -48,42 +55,49 @@ export class MastermindComponent implements OnInit {
   bleu(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "bleu";
+    this.boolBleu = true;
     this.essais();
   }
 
   rouge(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "rouge";
+    this.boolRouge = true;
     this.essais();
   }
 
   vert(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "vert";
+    this.boolVert = true;
     this.essais();
   }
 
   jaune(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "jaune";
+    this.boolJaune = true;
     this.essais();
   }
 
   rose(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "rose";
+    this.boolRose = true;
     this.essais();
   }
 
   noir(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "noir";
+    this.boolNoir = true;
     this.essais();
   }
 
   vertclair(): void {
     this.compteurCouleurs++;
     this.couleurChoisie = "vert clair";
+    this.boolVertClair = true;
     this.essais();
   }
 

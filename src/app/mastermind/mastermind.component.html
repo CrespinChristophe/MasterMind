@@ -3,7 +3,7 @@
 
 <div class="container" >
 
-<div (click)="bleu()" class="bleu"></div>    <!-- (click)="bleu"-->
+<div (click)="bleu()" class="bleu"></div>    
 <div (click)="rouge()" class="rouge"></div>
 <div (click)="vert()" class="vert"></div>
 <div (click)="jaune()" class="jaune"></div>
@@ -21,6 +21,18 @@
 <h3>Nombre de couleurs choisies : {{compteurCouleurs}}</h3><br>
 
 <h3>Couleur choisie : {{couleurChoisie}}</h3><br>
+
+<div class="container" >
+
+    <div class="bleu" *ngIf="boolBleu"></div>    
+    <div class="rouge" *ngIf="boolRouge"></div>
+    <div class="vert" *ngIf="boolVert"></div>
+    <div class="jaune" *ngIf="boolJaune"></div>
+    <div class="rose" *ngIf="boolRose"></div>
+    <div class="noir" *ngIf="boolNoir"></div>
+    <div class="vertclair" *ngIf="boolVertClair"></div>
+    
+    </div><br>
 
 <h3 *ngIf="isAvailable">Le nombre de couleurs choisies est atteint !!!!</h3>
 
