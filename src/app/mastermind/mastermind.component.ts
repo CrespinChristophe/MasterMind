@@ -19,7 +19,7 @@ export class MastermindComponent implements OnInit {
 
   //Tous les booleans
 
-  isAvailable: boolean = false;
+  boolNombreCouleursChoisies: boolean = false;
   boolBleu: boolean = false;
   boolRouge: boolean = false;
   boolVert: boolean = false;
@@ -43,7 +43,7 @@ export class MastermindComponent implements OnInit {
     if ( this.compteurCouleurs == 4) {
 
       //this.warning="Le nombre de couleurs choisie est atteint !!!!";
-      this.isAvailable = true;
+      this.boolNombreCouleursChoisies = true;
       
     } 
   }
@@ -110,7 +110,7 @@ export class MastermindComponent implements OnInit {
 
   reset() : void {
 
-  this.isAvailable = false;
+  this.boolNombreCouleursChoisies = false;
   this.boolBleu = false;
   this.boolRouge = false;
   this.boolVert = false;
