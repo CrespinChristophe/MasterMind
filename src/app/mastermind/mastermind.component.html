@@ -3,18 +3,27 @@
 
 <div class="container" >
 
-<div class="bleu"></div>    <!-- (click)="bleu"-->
-<div class="rouge"></div>
-<div class="vert"></div>
-<div class="jaune"></div>
-<div class="rose"></div>
-<div class="noir"></div>
-<div class="vertclair"></div>
+<div (click)="bleu()" class="bleu"></div>    <!-- (click)="bleu"-->
+<div (click)="rouge()" class="rouge"></div>
+<div (click)="vert()" class="vert"></div>
+<div (click)="jaune()" class="jaune"></div>
+<div (click)="rose()" class="rose"></div>
+<div (click)="noir()" class="noir"></div>
+<div (click)="vertclair()" class="vertclair"></div>
 
 </div>
 
 <br>
 
 <button (click)="set()">SET</button> <!-- Pour le ctrl-D ==> Intellij IDEA keybindings-->
-<button (click)="reset()">RESET</button>
+<button (click)="reset()">RESET</button><br>
+
+<h3>Nombre de couleurs choisies : {{compteurCouleurs}}</h3><br>
+
+<h3>Couleur choisie : {{couleurChoisie}}</h3><br>
+
+<h3 *ngIf="isAvailable">Le nombre de couleurs choisies est atteint !!!!</h3>
+
+
+
 
