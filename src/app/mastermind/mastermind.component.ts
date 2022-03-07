@@ -27,7 +27,6 @@ export class MastermindComponent implements OnInit {
   boolRose: boolean = false;
   boolNoir: boolean = false;
   boolVertClair: boolean = false;
-  boolContainer2: boolean = false;
 
 
 
@@ -52,7 +51,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "bleu";
     this.boolBleu = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -60,7 +58,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "rouge";
     this.boolRouge = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -68,7 +65,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "vert";
     this.boolVert = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -76,7 +72,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "jaune";
     this.boolJaune = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -84,7 +79,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "rose";
     this.boolRose = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -92,7 +86,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "noir";
     this.boolNoir = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -100,7 +93,6 @@ export class MastermindComponent implements OnInit {
     this.compteurCouleurs++;
     this.couleurChoisie = "vert clair";
     this.boolVertClair = true;
-    this.boolContainer2 = true;
     this.essais();
   }
 
@@ -118,7 +110,6 @@ export class MastermindComponent implements OnInit {
   this.boolRose = false;
   this.boolNoir = false;
   this.boolVertClair = false;
-  this.boolContainer2 = false;
   this.compteurCouleurs = 0;
 
   }
